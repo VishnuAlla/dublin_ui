@@ -1,0 +1,27 @@
+{
+  "authType" : "NONE",
+  "contentType" : "text/xml",
+  "endpointAddress" : "http://wavemaker-apps.pramati.com/dev_api_dublin/services/profile/policyCounts/440c1544-c8dc-11e6-9740-0242ac1108f8/2016",
+  "method" : "GET",
+  "requestBody" : "",
+  "headers" : { },
+  "queryParams" : { },
+  "sampleHttpResponseDetails" : {
+    "responseBody" : "[{\"Month\":\"Jan-2016\",\"GraphMonth\":\"Jan\",\"Target\":70000,\"PolicyCount\":104,\"Commission\":372874,\"PremiumAmount\":423209},{\"Month\":\"Feb-2016\",\"GraphMonth\":\"Feb\",\"Target\":80000,\"PolicyCount\":103,\"Commission\":355878,\"PremiumAmount\":392529},{\"Month\":\"Mar-2016\",\"GraphMonth\":\"Mar\",\"Target\":90000,\"PolicyCount\":103,\"Commission\":370264,\"PremiumAmount\":383596},{\"Month\":\"Apr-2016\",\"GraphMonth\":\"Apr\",\"Target\":60000,\"PolicyCount\":103,\"Commission\":367665,\"PremiumAmount\":381609},{\"Month\":\"May-2016\",\"GraphMonth\":\"May\",\"Target\":50000,\"PolicyCount\":103,\"Commission\":370554,\"PremiumAmount\":385423},{\"Month\":\"Jun-2016\",\"GraphMonth\":\"Jun\",\"Target\":33500,\"PolicyCount\":103,\"Commission\":352088,\"PremiumAmount\":368026},{\"Month\":\"Jul-2016\",\"GraphMonth\":\"Jul\",\"Target\":75000,\"PolicyCount\":103,\"Commission\":363982,\"PremiumAmount\":380771},{\"Month\":\"Aug-2016\",\"GraphMonth\":\"Aug\",\"Target\":65000,\"PolicyCount\":103,\"Commission\":365776,\"PremiumAmount\":383472},{\"Month\":\"Sep-2016\",\"GraphMonth\":\"Sep\",\"Target\":98000,\"PolicyCount\":103,\"Commission\":375568,\"PremiumAmount\":394032},{\"Month\":\"Oct-2016\",\"GraphMonth\":\"Oct\",\"Target\":40000,\"PolicyCount\":103,\"Commission\":394429,\"PremiumAmount\":413886},{\"Month\":\"Nov-2016\",\"GraphMonth\":\"Nov\",\"Target\":75000,\"PolicyCount\":148,\"Commission\":532720,\"PremiumAmount\":530971},{\"Month\":\"Dec-2016\",\"GraphMonth\":\"Dec\",\"Target\":86000,\"PolicyCount\":154,\"Commission\":571339,\"PremiumAmount\":618961}]",
+    "convertedResponse" : null,
+    "statusCode" : 200,
+    "headers" : {
+      "ETag" : [ "\"0c068fcd730db215b3e5fdd9f9a5a66d6\"" ],
+      "Date" : [ "Fri, 27 Jan 2017 11:51:29 GMT" ],
+      "Content-Length" : [ "1441" ],
+      "X-XSS-Protection" : [ "1" ],
+      "Connection" : [ "keep-alive" ],
+      "Content-Type" : [ "application/json;charset=UTF-8" ],
+      "Server" : [ "Apache-Coyote/1.1" ],
+      "mode" : [ "block" ],
+      "Cache-Control" : [ "max-age=0" ]
+    }
+  },
+  "redirectEnabled" : true,
+  "proxy" : null
+}

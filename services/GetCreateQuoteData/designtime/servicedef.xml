@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="GetCreateQuoteData" type="RestService" springFile="GetCreateQuoteData.spring.xml">
+    <operation name="invoke">
+        <parameter name="ApplicationID" typeRef="java.lang.String" isList="false"/>
+        <return typeRef="GetCreateQuoteData.RootResponse" isList="false"/>
+    </operation>
+    <dataobjects>
+        <dataobject javaType="GetCreateQuoteData.DetailsEntryItem" name="DetailsEntryItem" supportsQuickData="false">
+            <element name="AddressLine1" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="AddressLine2" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="AddressType" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="AnnualIncome" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="ApplicationId" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="ChangeInWeight" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="ClientId" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="ClientName" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="Company" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="Country" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="EmailId" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="Gender" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="Height" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="MaritalStatus" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="MobileNumber" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="Nationality" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="NoOfChildren" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="Occupation" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="OccupationalHazards" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PhoneNumber" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PolicyId" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PremiumToBePaid" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PremiumType" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="Qualification" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="StartDate" typeRef="java.lang.Long" isList="false" allowNull="false"/>
+            <element name="StateId" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="SumAssured" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="Term" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="TobaccoIntake" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="Weight" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="Zip" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="clientDOB" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="policyName" typeRef="java.lang.String" isList="false" allowNull="false"/>
+        </dataobject>
+        <dataobject javaType="GetCreateQuoteData.RootResponse" name="RootResponse" supportsQuickData="false">
+            <element name="Details" typeRef="GetCreateQuoteData.DetailsEntryItem" isList="true" allowNull="false"/>
+            <element name="Nominees" typeRef="GetCreateQuoteData.java.lang.Object" isList="true" allowNull="false"/>
+        </dataobject>
+        <dataobject javaType="GetCreateQuoteData.java.lang.Object" name="java.lang.Object" supportsQuickData="false"/>
+    </dataobjects>
+</service>

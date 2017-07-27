@@ -1,0 +1,99 @@
+{
+  "basePath" : "/dev_api_dublin",
+  "tags" : [ {
+    "description" : "Rest service swagger documentation",
+    "name" : "RestServiceVirtualController"
+  } ],
+  "host" : "wavemaker-apps.pramati.com",
+  "paths" : {
+    "/services/profile/customerPortfolio/{userid}" : {
+      "x-WM-TAG" : "RestServiceVirtualController",
+      "x-WM-BASE_PATH" : "/services/profile/customerPortfolio/{userid}",
+      "get" : {
+        "tags" : [ "RestServiceVirtualController" ],
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "userid",
+          "required" : true,
+          "type" : "string",
+          "in" : "path"
+        } ],
+        "consumes" : [ "text/xml" ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "x-WM-IS_LIST" : true,
+              "items" : {
+                "$ref" : "#/definitions/RootResponseROOTEntryItem"
+              },
+              "type" : "array",
+              "uniqueItems" : false
+            },
+            "description" : "Success"
+          }
+        },
+        "operationId" : "CustomerPortfolio_RestServiceVirtualController-invoke"
+      },
+      "x-WM-COMPLETE_PATH" : "${rest.CustomerPortfolio.scheme}://${rest.CustomerPortfolio.host}${rest.CustomerPortfolio.basepath}/services/profile/customerPortfolio/{userid}",
+      "x-WM-RELATIVE_PATH" : ""
+    }
+  },
+  "schemes" : [ "https" ],
+  "swagger" : "2.0",
+  "definitions" : {
+    "RootResponse" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "CustomerPortfolio.RootResponse",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "properties" : {
+        "RootResponseROOT" : {
+          "x-WM-IS_LIST" : true,
+          "items" : {
+            "$ref" : "#/definitions/RootResponseROOTEntryItem"
+          },
+          "type" : "array",
+          "uniqueItems" : false
+        }
+      }
+    },
+    "RootResponseROOTEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "CustomerPortfolio.RootResponseROOTEntryItem",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "properties" : {
+        "AnnualPremium" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "PolicyCount" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "ClientName" : {
+          "type" : "string"
+        },
+        "ClientNumber" : {
+          "type" : "string"
+        },
+        "ClientId" : {
+          "type" : "string"
+        },
+        "MobileNumber" : {
+          "type" : "string"
+        },
+        "PremiumPaid" : {
+          "format" : "int32",
+          "type" : "integer"
+        }
+      }
+    }
+  },
+  "info" : {
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "x-WM-API_ID" : "50df4ef3-2bba-49aa-9bec-0688bbaab22b",
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-SERVICE_ID" : "pramati",
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "version" : "2.0"
+  }
+}

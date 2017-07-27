@@ -1,0 +1,260 @@
+/************ 1. Tab CSS Should be form Theme********************/
+/*.app-tabs .tab-content .tab-pane .tab-body {*/
+/*    border-width: 0 0px 0px;*/
+/*    padding: 0px 0px 0px 0px;*/
+/*}*/
+/*.wm-app .nav-tabs > li > a,*/
+/*.wm-app .nav-tabs > li .app-menu a {*/
+/*   border: none;*/
+/*    width: 150px;*/
+/*    text-align: center;*/
+/*    font-family: Roboto-regular;*/
+/*    font-size: 14px;*/
+/*    color: #d4145a;*/
+/*    text-transform: capitalize;*/
+/*}*/
+/*.wm-app .nav-tabs > li.active > a,*/
+/*.wm-app .nav-tabs > li.active > a:hover,*/
+/*.wm-app .nav-tabs > li.active > a:focus {*/
+ 
+/*border: none;*/
+/*    width: 100px;*/
+/*    text-align: center;*/
+/*    font-family: Roboto-Medium;*/
+/*    font-size: 14px;*/
+   
+/*    color: #d4145a;*/
+/*    text-transform: capitalize;*/
+/*}*/
+/************Tab CSS Ends ********************/
+
+/*.wm-app .nav-tabs, .wm-app .nav-justified  {*/
+    /*background-color: #282d39;*/
+/*     background-color: #2e3443;*/
+/*    color:#ffffff;*/
+/*    border:none;*/
+/*}*/
+/*.bkgcolor_tab {*/
+   
+/*    color:#ffffff;*/
+/*    background-color: #282d39;*/
+/*  border: solid 1px #363d50*/
+/*}*/
+
+
+/*.wm-app .titlelabels*/
+/*{*/
+/*   color: #556287; */
+/*   font-size:14px;*/
+/*}*/
+
+/*.wm-app .namelabel*/
+/*{*/
+/*    font-size: 16px;*/
+/*}*/
+
+
+
+
+
+/*.wm-app .nav-tabs > li > a, .wm-app .nav-justified > li > a, .wm-app .nav-tabs > li .app-menu a, .wm-app .nav-justified > li .app-menu a {*/
+    
+/*    color:#556287;*/
+/*    font-family:Roboto-Medium;*/
+/*    font-size:14px;*/
+/*    overflow:hidden;*/
+   
+/*}*/
+
+/*.wm-app .label-id{*/
+/* border-radius: 2px;   */
+/* padding: 1ex .1ex .1ex 1ex;*/
+/*}*/
+
+
+
+
+
+
+
+.wm-app .list-group-item {
+    background-color: #282d39;
+    border:none;
+        padding: 0 !important;
+        margin: 10px 10px 0 0;
+   /*Padding: 05px  05px !important;*/
+   cursor: pointer
+}
+.wm-app .list-group-item .app-container
+{
+    background-color:#2e3443;
+}
+.wm-app .list-group-item.active .app-container, .wm-app .list-group-item.active .app-container:hover, .wm-app .list-group-item.active .app-container:focus
+{
+        background-color: #363d50;
+    margin: 0;
+    border-color: #363d50;
+}
+.wm-app .cursor-type{
+    
+     cursor: pointer;
+}
+
+/*.app-tabs .tab-content {*/
+/*    background-color: #282d39;*/
+/*}*/
+/*.app-tabs .tab-content .tab-pane.active {*/
+ /*margin-right:5px;*/
+ /*margin-top:10px;*/
+ /*margin-bottom:10px;*/
+/* border:none;*/
+/*}*/
+
+.wm-app .btn-round{
+    /*    border-radius:100px;*/
+    /*background-color:#02d0a0;*/
+    /*width:2px !important;*/
+    /*height:2px !important;*/
+    /*Commented by kajal*/
+
+    margin-bottom: 0.2em;
+    width: 8px;
+    height: 8px;
+    /*background-color: #01d0a0;*/
+    border: none;
+    border-radius: 50%;
+    padding: 6px;
+    /* padding: 16px; */
+    
+}
+/*@media only screen and (max-width: 844px) and (min-width: 299px)*/
+/*{*/
+/*.wm-app .app-content-column {*/
+/*    padding-left: 10px;*/
+/*}*/
+/*}*/
+
+/*css for tabs pane started*/
+
+.app-tabs .tab-content {
+    background-color: #282d39;
+}
+.wm-app .custleft_container {
+    border: solid 1px #363d50;
+}
+.wm-app .custleft_container .nav-tabs,
+.wm-app .custleft_container .nav-justified {
+    background-color: #2e3443;
+}
+.wm-app .nav-tabs,
+.wm-app .nav-justified {
+    background-color: #282d39;
+}
+.wm-app .nav-tabs {
+    border-bottom: 1px solid #363d50;
+}
+.wm-app .custleft_container .app-tabs .nav.nav-tabs>li {
+    width: 50%;
+}
+.wm-app .custleft_container .nav-tabs > li > a,
+.wm-app .custleft_container .nav-justified > li > a,
+.wm-app .custleft_container .nav-tabs > li .app-menu a,
+.wm-app .custleft_container .nav-justified > li .app-menu a {
+    padding-left: 40px;
+}
+.wm-app .custleft_container .app-tabs .tab-content .tab-pane .tab-body
+{
+        /*padding: 10px 0 10px 0;*/
+}
+.wm-app .custleft_container .app-list ul.list-group, .app-livelist ul.list-group
+{
+    margin:-5px;
+}
+.wm-app .nav-tabs > li.active > a,
+.wm-app .nav-justified > li.active > a,
+.wm-app .nav-tabs > li.active .app-menu a,
+.wm-app .nav-justified > li.active .app-menu a {
+    color: #d4145a!important;
+    font-family: 'Roboto-Medium';
+    font-weight: 500;
+    font-size: 14px;
+    /*padding-left: 40px;*/
+}
+.wm-app .nav-tabs > li > a,
+.wm-app .nav-justified > li > a,
+.wm-app .nav-tabs > li .app-menu a,
+.wm-app .nav-justified > li .app-menu a {
+    color: #556287 !important;
+    text-transform: none;
+    font-family: 'Roboto-Medium';
+    font-weight: 500;
+    font-size: 14px;
+}
+/*css for tabs pane ended*/
+
+
+
+.wm-app .titlelabels {
+    font-family: 'Roboto-Regular';
+    font-size: 14px;
+    color: #556287;
+    /*margin-top: 20px;*/
+    margin-bottom: 0;
+}
+.wm-app .namelabel {
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
+    color: #ffffff;
+}
+@media only screen and (max-width: 844px) and (min-width: 299px){
+.wm-app .mobileleft_container
+{
+    position: relative;
+}
+.wm-app .mobileright_container
+{
+    position: absolute;
+    /*display:none;*/
+    /*left: -400px;*/
+    right:-500px;
+    transition: 2s;
+}
+.wm-app .nav_container
+{
+    /*position: absolute;*/
+    /*left: 0;*/
+    right:0;
+    transition: 2s;
+}
+.wm-app .custright_container
+{
+    /*display:none;*/
+    padding-left:0 !important;
+}
+.wm-app .hidecontainer
+{
+    display:none;
+}
+/*.wrapper {*/
+/*    position: relative;*/
+/*    overflow: hidden;*/
+/*    width: 100px;*/
+/*    height: 100px; */
+/*    border: 1px solid black;*/
+/*}*/
+
+/*.slide {*/
+/*    position: absolute;*/
+/*    left: -100px;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+    /*background: blue;*/
+/*    transition: 1s;*/
+/*}*/
+
+/*.wrapper:hover #slide {*/
+/*    transition: 1s;*/
+/*    left: 0;*/
+/*}*/
+}
+/*custom css for customerprofile ended*/

@@ -1,0 +1,27 @@
+{
+  "authType" : "NONE",
+  "contentType" : "text/xml",
+  "endpointAddress" : "https://wavemaker-apps.pramati.com/dev_api_dublin/services/profile/customerPortfolio/440c1544-c8dc-11e6-9740-0242ac1108f8",
+  "method" : "GET",
+  "requestBody" : "",
+  "headers" : { },
+  "queryParams" : { },
+  "sampleHttpResponseDetails" : {
+    "responseBody" : "[{\"MobileNumber\":\"8063891111\",\"ClientName\":\"Adam Paul\",\"ClientId\":\"1ae6a903-dd66-11e6-873e-0242ac1109d2\",\"ClientNumber\":\"C00003\",\"AnnualPremium\":33000,\"PolicyCount\":2,\"PremiumPaid\":33000},{\"MobileNumber\":\"8063892222\",\"ClientName\":\"Robinson\",\"ClientId\":\"1aedc267-dd66-11e6-873e-0242ac1109d2\",\"ClientNumber\":\"C00004\",\"AnnualPremium\":37000,\"PolicyCount\":2,\"PremiumPaid\":37000},{\"MobileNumber\":\"8063895443\",\"ClientName\":\"Lee Scott\",\"ClientId\":\"1af1607f-dd66-11e6-873e-0242ac1109d2\",\"ClientNumber\":\"C00005\",\"AnnualPremium\":41000,\"PolicyCount\":2,\"PremiumPaid\":41000},{\"MobileNumber\":\"8063895443\",\"ClientName\":\"Clark Wright\",\"ClientId\":\"1af52cc3-dd66-11e6-873e-0242ac1109d2\",\"ClientNumber\":\"C00006\",\"AnnualPremium\":45000,\"PolicyCount\":2,\"PremiumPaid\":45000},{\"MobileNumber\":\"8063890000\",\"ClientName\":\"Mary Williams\",\"ClientId\":\"dd88b13c-c8de-11e6-9740-0242ac1108f8\",\"ClientNumber\":\"C00001\",\"AnnualPremium\":70225,\"PolicyCount\":2,\"PremiumPaid\":70225},{\"MobileNumber\":\"8066445522\",\"ClientName\":\"John Doe\",\"ClientId\":\"e566c2f4-c8de-11e6-9740-0242ac1108f8\",\"ClientNumber\":\"C00002\",\"AnnualPremium\":84000,\"PolicyCount\":2,\"PremiumPaid\":126000}]",
+    "convertedResponse" : null,
+    "statusCode" : 200,
+    "headers" : {
+      "ETag" : [ "\"0b11e237758bead76ef5f6c12ec6f24db\"" ],
+      "Date" : [ "Wed, 08 Feb 2017 10:34:11 GMT" ],
+      "Content-Length" : [ "1153" ],
+      "X-XSS-Protection" : [ "1" ],
+      "Connection" : [ "keep-alive" ],
+      "Content-Type" : [ "application/json;charset=UTF-8" ],
+      "Server" : [ "Apache-Coyote/1.1" ],
+      "mode" : [ "block" ],
+      "Cache-Control" : [ "max-age=0" ]
+    }
+  },
+  "redirectEnabled" : true,
+  "proxy" : null
+}

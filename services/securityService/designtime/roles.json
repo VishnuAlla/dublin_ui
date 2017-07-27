@@ -1,0 +1,13 @@
+[ {
+  "name" : "Agent",
+  "description" : null,
+  "roleConfig" : {
+    "landingPage" : "Dashboard"
+  }
+}, {
+  "name" : "Client",
+  "description" : null,
+  "roleConfig" : {
+    "landingPage" : "Profile"
+  }
+} ]

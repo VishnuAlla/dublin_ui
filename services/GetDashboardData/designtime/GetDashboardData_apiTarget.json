@@ -1,0 +1,119 @@
+{
+  "basePath" : "/dev_api_dublin",
+  "tags" : [ {
+    "description" : "Rest service swagger documentation",
+    "name" : "RestServiceVirtualController"
+  } ],
+  "host" : "wavemaker-apps.pramati.com",
+  "paths" : {
+    "/services/profile/policiesByStatus/{agentid}/{status}" : {
+      "x-WM-TAG" : "RestServiceVirtualController",
+      "x-WM-BASE_PATH" : "/services/profile/policiesByStatus/{agentid}/{status}",
+      "get" : {
+        "tags" : [ "RestServiceVirtualController" ],
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "agentid",
+          "required" : true,
+          "type" : "string",
+          "in" : "path"
+        }, {
+          "name" : "status",
+          "required" : true,
+          "type" : "string",
+          "in" : "path"
+        } ],
+        "consumes" : [ "text/xml" ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "x-WM-IS_LIST" : true,
+              "items" : {
+                "$ref" : "#/definitions/RootResponseROOTEntryItem"
+              },
+              "type" : "array",
+              "uniqueItems" : false
+            },
+            "description" : "Success"
+          }
+        },
+        "operationId" : "GetDashboardData_RestServiceVirtualController-invoke"
+      },
+      "x-WM-COMPLETE_PATH" : "${rest.GetDashboardData.scheme}://${rest.GetDashboardData.host}${rest.GetDashboardData.basepath}/services/profile/policiesByStatus/{agentid}/{status}",
+      "x-WM-RELATIVE_PATH" : ""
+    }
+  },
+  "schemes" : [ "http" ],
+  "swagger" : "2.0",
+  "definitions" : {
+    "RootResponse" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "GetDashboardData.RootResponse",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "properties" : {
+        "RootResponseROOT" : {
+          "x-WM-IS_LIST" : true,
+          "items" : {
+            "$ref" : "#/definitions/RootResponseROOTEntryItem"
+          },
+          "type" : "array",
+          "uniqueItems" : false
+        }
+      }
+    },
+    "RootResponseROOTEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "GetDashboardData.RootResponseROOTEntryItem",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "properties" : {
+        "Status" : {
+          "type" : "string"
+        },
+        "PolicyId" : {
+          "type" : "string"
+        },
+        "PremiumToBePaid" : {
+          "type" : "string"
+        },
+        "DueDate" : {
+          "type" : "string"
+        },
+        "PolicyName" : {
+          "type" : "string"
+        },
+        "ClientName" : {
+          "type" : "string"
+        },
+        "CreatedBy" : {
+          "format" : "int64",
+          "type" : "integer"
+        },
+        "ApplicationDate" : {
+          "format" : "int64",
+          "type" : "integer"
+        },
+        "MobileNumber" : {
+          "type" : "string"
+        },
+        "ApplicationId" : {
+          "type" : "string"
+        },
+        "PremiumPaid" : {
+          "type" : "string"
+        },
+        "SumAssured" : {
+          "format" : "int32",
+          "type" : "integer"
+        }
+      }
+    }
+  },
+  "info" : {
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "x-WM-API_ID" : "d5c7d559-2b48-4785-8786-aae310b70ed4",
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-SERVICE_ID" : "pramati",
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "version" : "2.0"
+  }
+}

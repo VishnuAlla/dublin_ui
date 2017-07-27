@@ -1,0 +1,27 @@
+{
+  "authType" : "NONE",
+  "contentType" : "text/xml",
+  "endpointAddress" : "https://wavemaker-apps.pramati.com/dev_api_dublin/services/createQuote/policyId/iProtect Plus",
+  "method" : "GET",
+  "requestBody" : "",
+  "headers" : { },
+  "queryParams" : { },
+  "sampleHttpResponseDetails" : {
+    "responseBody" : "{\"UniquePolicyId\":\"858e74a4-cb43-11e6-8c86-0242ac11090e\",\"PlanName\":\"iProtect Plus\",\"CurrentFundValue\":1000000,\"CashValue\":20000}",
+    "convertedResponse" : null,
+    "statusCode" : 200,
+    "headers" : {
+      "ETag" : [ "\"00e09dc0eaa6027e2a593e1007fec174d\"" ],
+      "Date" : [ "Fri, 03 Feb 2017 06:19:11 GMT" ],
+      "Content-Length" : [ "135" ],
+      "X-XSS-Protection" : [ "1" ],
+      "Connection" : [ "keep-alive" ],
+      "Content-Type" : [ "application/json;charset=UTF-8" ],
+      "Server" : [ "Apache-Coyote/1.1" ],
+      "mode" : [ "block" ],
+      "Cache-Control" : [ "max-age=0" ]
+    }
+  },
+  "redirectEnabled" : true,
+  "proxy" : null
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="GetClientPolicyDetails" type="RestService" springFile="GetClientPolicyDetails.spring.xml">
+    <operation name="invoke">
+        <parameter name="id" typeRef="java.lang.String" isList="false"/>
+        <parameter name="type" typeRef="java.lang.String" isList="false"/>
+        <return typeRef="GetClientPolicyDetails.RootResponse" isList="false"/>
+    </operation>
+    <dataobjects>
+        <dataobject javaType="GetClientPolicyDetails.ClientDetails" name="ClientDetails" supportsQuickData="false">
+            <element name="Address" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="ClientName" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="ClientNumber" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="DateOfBirth" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="EmailId" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="MaritalStatus" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="MobileNumber" typeRef="java.lang.String" isList="false" allowNull="false"/>
+        </dataobject>
+        <dataobject javaType="GetClientPolicyDetails.NomineeDetailsEntryItem" name="NomineeDetailsEntryItem" supportsQuickData="false">
+            <element name="DateOfBirth" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="EntilementPercentage" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="MobileNumber" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="Name" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="Relationship" typeRef="java.lang.String" isList="false" allowNull="false"/>
+        </dataobject>
+        <dataobject javaType="GetClientPolicyDetails.PaymentDetailsEntryItem" name="PaymentDetailsEntryItem" supportsQuickData="false">
+            <element name="PaymentDate" typeRef="java.lang.Long" isList="false" allowNull="false"/>
+            <element name="PaymentMode" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PolicyPaymentId" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PremiumPaid" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="TransactionId" typeRef="java.lang.String" isList="false" allowNull="false"/>
+        </dataobject>
+        <dataobject javaType="GetClientPolicyDetails.PolicyDetail" name="PolicyDetail" supportsQuickData="false">
+            <element name="NextDueDate" typeRef="java.lang.Long" isList="false" allowNull="false"/>
+            <element name="PlanName" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PolicyId" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PolicyStatus" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PremiumPaid" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PremiumToBePaid" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PremiumType" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="StartDate" typeRef="java.lang.Long" isList="false" allowNull="false"/>
+            <element name="SumAssured" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="term" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+        </dataobject>
+        <dataobject javaType="GetClientPolicyDetails.RootResponse" name="RootResponse" supportsQuickData="false">
+            <element name="ClientDetails" typeRef="GetClientPolicyDetails.ClientDetails" isList="false" allowNull="false"/>
+            <element name="NomineeDetails" typeRef="GetClientPolicyDetails.NomineeDetailsEntryItem" isList="true" allowNull="false"/>
+            <element name="PaymentDetails" typeRef="GetClientPolicyDetails.PaymentDetailsEntryItem" isList="true" allowNull="false"/>
+            <element name="PolicyDetail" typeRef="GetClientPolicyDetails.PolicyDetail" isList="false" allowNull="false"/>
+        </dataobject>
+    </dataobjects>
+</service>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="GetDashboardData" type="RestService" springFile="GetDashboardData.spring.xml">
+    <operation name="invoke">
+        <parameter name="agentid" typeRef="java.lang.String" isList="false"/>
+        <parameter name="status" typeRef="java.lang.String" isList="false"/>
+        <return isList="false"/>
+    </operation>
+    <dataobjects>
+        <dataobject javaType="GetDashboardData.RootResponse" name="RootResponse" supportsQuickData="false">
+            <element name="RootResponseROOT" typeRef="GetDashboardData.RootResponseROOTEntryItem" isList="true" allowNull="false"/>
+        </dataobject>
+        <dataobject javaType="GetDashboardData.RootResponseROOTEntryItem" name="RootResponseROOTEntryItem" supportsQuickData="false">
+            <element name="ApplicationDate" typeRef="java.lang.Long" isList="false" allowNull="false"/>
+            <element name="ApplicationId" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="ClientName" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="CreatedBy" typeRef="java.lang.Long" isList="false" allowNull="false"/>
+            <element name="DueDate" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="MobileNumber" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PolicyId" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PolicyName" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PremiumPaid" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PremiumToBePaid" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="Status" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="SumAssured" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+        </dataobject>
+    </dataobjects>
+</service>

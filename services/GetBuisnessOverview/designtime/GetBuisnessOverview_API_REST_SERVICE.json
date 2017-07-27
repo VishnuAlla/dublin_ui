@@ -1,0 +1,100 @@
+{
+  "basePath" : "",
+  "tags" : [ {
+    "description" : "Rest service swagger documentation",
+    "name" : "RestServiceVirtualController"
+  } ],
+  "host" : "wavemaker-apps.pramati.com",
+  "paths" : {
+    "/GetBuisnessOverview/invoke/services/profile/policyCounts/{agentid}/{year}" : {
+      "x-WM-BASE_PATH" : "/GetBuisnessOverview/invoke/services/profile/policyCounts/{agentid}/{year}",
+      "x-WM-TAG" : "RestServiceVirtualController",
+      "get" : {
+        "tags" : [ "RestServiceVirtualController" ],
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "agentid",
+          "required" : true,
+          "type" : "string",
+          "in" : "path"
+        }, {
+          "name" : "year",
+          "required" : true,
+          "type" : "string",
+          "in" : "path"
+        } ],
+        "consumes" : [ "text/xml" ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "x-WM-IS_LIST" : true,
+              "items" : {
+                "$ref" : "#/definitions/RootResponseROOTEntryItem"
+              },
+              "type" : "array"
+            },
+            "description" : "Success"
+          }
+        },
+        "operationId" : "GetBuisnessOverview_RestServiceVirtualController-invoke"
+      },
+      "x-WM-RELATIVE_PATH" : "",
+      "x-WM-COMPLETE_PATH" : "${rest.GetBuisnessOverview.scheme}://${rest.GetBuisnessOverview.host}${rest.GetBuisnessOverview.basepath}/services/profile/policyCounts/{agentid}/{year}"
+    }
+  },
+  "schemes" : [ "http" ],
+  "swagger" : "2.0",
+  "definitions" : {
+    "RootResponse" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "GetBuisnessOverview.RootResponse",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "properties" : {
+        "RootResponseROOT" : {
+          "x-WM-IS_LIST" : true,
+          "items" : {
+            "$ref" : "#/definitions/RootResponseROOTEntryItem"
+          },
+          "type" : "array"
+        }
+      }
+    },
+    "RootResponseROOTEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "GetBuisnessOverview.RootResponseROOTEntryItem",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "properties" : {
+        "Commission" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "GraphMonth" : {
+          "type" : "string"
+        },
+        "Target" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "PolicyCount" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "PremiumAmount" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "Month" : {
+          "type" : "string"
+        }
+      }
+    }
+  },
+  "info" : {
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "x-WM-API_ID" : "28371c1c-98c1-4d10-9b96-81106395179d",
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-SERVICE_ID" : "pramati",
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "version" : "2.0"
+  }
+}

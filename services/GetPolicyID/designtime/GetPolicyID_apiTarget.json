@@ -1,0 +1,70 @@
+{
+  "basePath" : "/dev_api_dublin",
+  "tags" : [ {
+    "description" : "Rest service swagger documentation",
+    "name" : "RestServiceVirtualController"
+  } ],
+  "host" : "wavemaker-apps.pramati.com",
+  "paths" : {
+    "/services/createQuote/policyId/{name}" : {
+      "x-WM-TAG" : "RestServiceVirtualController",
+      "x-WM-BASE_PATH" : "/services/createQuote/policyId/{name}",
+      "get" : {
+        "tags" : [ "RestServiceVirtualController" ],
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "name",
+          "required" : true,
+          "type" : "string",
+          "in" : "path"
+        } ],
+        "consumes" : [ "text/xml" ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/RootResponse"
+            },
+            "description" : "Success"
+          }
+        },
+        "operationId" : "GetPolicyID_RestServiceVirtualController-invoke"
+      },
+      "x-WM-COMPLETE_PATH" : "${rest.GetPolicyID.scheme}://${rest.GetPolicyID.host}${rest.GetPolicyID.basepath}/services/createQuote/policyId/{name}",
+      "x-WM-RELATIVE_PATH" : ""
+    }
+  },
+  "schemes" : [ "https" ],
+  "swagger" : "2.0",
+  "definitions" : {
+    "RootResponse" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "GetPolicyID.RootResponse",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "properties" : {
+        "UniquePolicyId" : {
+          "type" : "string"
+        },
+        "PlanName" : {
+          "type" : "string"
+        },
+        "CashValue" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "CurrentFundValue" : {
+          "format" : "int32",
+          "type" : "integer"
+        }
+      }
+    }
+  },
+  "info" : {
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "x-WM-API_ID" : "c3649c4b-0056-4c16-a0eb-eade8699c5fb",
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-SERVICE_ID" : "pramati",
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "version" : "2.0"
+  }
+}

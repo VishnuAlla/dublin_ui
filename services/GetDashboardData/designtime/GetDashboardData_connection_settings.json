@@ -1,0 +1,27 @@
+{
+  "authType" : "NONE",
+  "contentType" : "text/xml",
+  "endpointAddress" : "http://wavemaker-apps.pramati.com/dev_api_dublin/services/profile/policiesByStatus/2516f904-c8df-11e6-9740-0242ac1108f8/PendingIssuance",
+  "method" : "GET",
+  "requestBody" : "",
+  "headers" : { },
+  "queryParams" : { },
+  "sampleHttpResponseDetails" : {
+    "responseBody" : "[{\"MobileNumber\":\"8066445522\",\"ClientName\":\"John Doe\",\"PolicyId\":\"\",\"ApplicationId\":\"A65258921\",\"ApplicationDate\":1482749736000,\"SumAssured\":10000000,\"Status\":\"PendingIssuance\",\"CreatedBy\":1483003521000,\"PremiumToBePaid\":\"25500\",\"PremiumPaid\":null,\"PolicyName\":\"WEALTH BUILDER PLUS\",\"DueDate\":null}]",
+    "convertedResponse" : null,
+    "statusCode" : 200,
+    "headers" : {
+      "ETag" : [ "\"04e24f89457f3562f362fc64b30ec3f61\"" ],
+      "Date" : [ "Fri, 30 Dec 2016 07:21:09 GMT" ],
+      "Content-Length" : [ "302" ],
+      "X-XSS-Protection" : [ "1" ],
+      "Connection" : [ "keep-alive" ],
+      "Content-Type" : [ "application/json;charset=UTF-8" ],
+      "Server" : [ "Apache-Coyote/1.1" ],
+      "mode" : [ "block" ],
+      "Cache-Control" : [ "max-age=0" ]
+    }
+  },
+  "redirectEnabled" : true,
+  "proxy" : null
+}

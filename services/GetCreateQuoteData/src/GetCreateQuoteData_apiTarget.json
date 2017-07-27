@@ -1,0 +1,188 @@
+{
+  "tags" : [ {
+    "description" : "Rest service swagger documentation",
+    "name" : "RestServiceVirtualController"
+  } ],
+  "basePath" : "${rest.GetCreateQuoteData.basepath}",
+  "paths" : {
+    "/services/createQuote/pendingApplicationDetails/{ApplicationID}" : {
+      "x-WM-BASE_PATH" : "/services/createQuote/pendingApplicationDetails/{ApplicationID}",
+      "x-WM-TAG" : "RestServiceVirtualController",
+      "get" : {
+        "tags" : [ "RestServiceVirtualController" ],
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "ApplicationID",
+          "type" : "string",
+          "required" : true,
+          "in" : "path"
+        } ],
+        "consumes" : [ "text/xml" ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "$ref" : "#/definitions/RootResponse"
+            },
+            "description" : "Success"
+          }
+        },
+        "operationId" : "GetCreateQuoteData_RestServiceVirtualController-invoke"
+      },
+      "x-WM-RELATIVE_PATH" : "",
+      "x-WM-COMPLETE_PATH" : "${rest.GetCreateQuoteData.scheme}://${rest.GetCreateQuoteData.host}${rest.GetCreateQuoteData.basepath}/services/createQuote/pendingApplicationDetails/{ApplicationID}"
+    }
+  },
+  "host" : "${rest.GetCreateQuoteData.host}",
+  "schemes" : [ "${rest.GetCreateQuoteData.scheme}" ],
+  "swagger" : "2.0",
+  "definitions" : {
+    "RootResponse" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "GetCreateQuoteData.RootResponse",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "properties" : {
+        "Details" : {
+          "x-WM-IS_LIST" : true,
+          "items" : {
+            "$ref" : "#/definitions/DetailsEntryItem"
+          },
+          "uniqueItems" : false,
+          "type" : "array"
+        },
+        "Nominees" : {
+          "x-WM-IS_LIST" : true,
+          "items" : {
+            "$ref" : "#/definitions/java.lang.Object"
+          },
+          "uniqueItems" : false,
+          "type" : "array"
+        }
+      }
+    },
+    "DetailsEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "GetCreateQuoteData.DetailsEntryItem",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "properties" : {
+        "Qualification" : {
+          "type" : "string"
+        },
+        "TobaccoIntake" : {
+          "type" : "string"
+        },
+        "PremiumToBePaid" : {
+          "type" : "string"
+        },
+        "OccupationalHazards" : {
+          "type" : "string"
+        },
+        "AnnualIncome" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "ApplicationId" : {
+          "type" : "string"
+        },
+        "PolicyId" : {
+          "type" : "string"
+        },
+        "StartDate" : {
+          "format" : "int64",
+          "type" : "integer"
+        },
+        "Weight" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "NoOfChildren" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "StateId" : {
+          "type" : "string"
+        },
+        "ChangeInWeight" : {
+          "type" : "string"
+        },
+        "Occupation" : {
+          "type" : "string"
+        },
+        "MaritalStatus" : {
+          "type" : "string"
+        },
+        "Zip" : {
+          "type" : "string"
+        },
+        "EmailId" : {
+          "type" : "string"
+        },
+        "Company" : {
+          "type" : "string"
+        },
+        "MobileNumber" : {
+          "type" : "string"
+        },
+        "Height" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "PhoneNumber" : {
+          "type" : "string"
+        },
+        "ClientId" : {
+          "type" : "string"
+        },
+        "Country" : {
+          "type" : "string"
+        },
+        "Nationality" : {
+          "type" : "string"
+        },
+        "Term" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "SumAssured" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "clientDOB" : {
+          "type" : "string"
+        },
+        "policyName" : {
+          "type" : "string"
+        },
+        "PremiumType" : {
+          "type" : "string"
+        },
+        "Gender" : {
+          "type" : "string"
+        },
+        "ClientName" : {
+          "type" : "string"
+        },
+        "AddressType" : {
+          "type" : "string"
+        },
+        "AddressLine1" : {
+          "type" : "string"
+        },
+        "AddressLine2" : {
+          "type" : "string"
+        }
+      }
+    },
+    "java.lang.Object" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "GetCreateQuoteData.java.lang.Object",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ]
+    }
+  },
+  "info" : {
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "x-WM-API_ID" : "6e5b583e-428b-4510-9c9d-90ca2a4b1a02",
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-SERVICE_ID" : "pramati",
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "version" : "2.0"
+  }
+}

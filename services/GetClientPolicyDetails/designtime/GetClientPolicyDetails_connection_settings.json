@@ -1,0 +1,30 @@
+{
+  "authType" : "NONE",
+  "contentType" : "text/xml",
+  "endpointAddress" : "https://wavemaker-apps.pramati.com/dev_api_dublin/services/clientProfile/clientPolicyDetails",
+  "method" : "GET",
+  "requestBody" : "",
+  "headers" : { },
+  "queryParams" : {
+    "id" : "p00003",
+    "type" : "policyId"
+  },
+  "sampleHttpResponseDetails" : {
+    "responseBody" : "{\"NomineeDetails\":[{\"Name\":\"RichardJones\",\"Relationship\":\"Father\",\"EntilementPercentage\":50,\"DateOfBirth\":\"1982-05-05\",\"MobileNumber\":\"6565565656\"}],\"PaymentDetails\":[{\"PaymentDate\":1452938136000,\"PolicyPaymentId\":\"1ddcfa71-edf0-11e6-ba0a-0242ac11000b\",\"TransactionId\":\"T18791873\",\"PaymentMode\":\"Cheque\",\"PremiumPaid\":\"42000\"},{\"PaymentDate\":1484646936000,\"PolicyPaymentId\":\"1de4a091-edf0-11e6-ba0a-0242ac11000b\",\"TransactionId\":\"T18791874\",\"PaymentMode\":\"Cheque\",\"PremiumPaid\":\"42000\"}],\"PolicyDetail\":{\"PlanName\":\"iProtect Plus\",\"PolicyStatus\":\"InForce\",\"PremiumToBePaid\":\"42000\",\"term\":10,\"PremiumPaid\":\"42000\",\"PolicyId\":\"P00003\",\"StartDate\":1452858936000,\"NextDueDate\":1484560536000,\"SumAssured\":10000000,\"PremiumType\":\"yearly\"},\"ClientDetails\":{\"ClientNumber\":\"C00002\",\"ClientName\":\"John Doe\",\"EmailId\":\"John.Doe@Mailbox.com\",\"MobileNumber\":\"8066445522\",\"Address\":null,\"DateOfBirth\":\"1990-11-01\",\"MaritalStatus\":\"Single\"}}",
+    "convertedResponse" : null,
+    "statusCode" : 200,
+    "headers" : {
+      "ETag" : [ "\"0efa031025fa0c2023e51d9e67ad51b87\"" ],
+      "Date" : [ "Thu, 09 Feb 2017 13:10:35 GMT" ],
+      "Content-Length" : [ "931" ],
+      "X-XSS-Protection" : [ "1" ],
+      "Connection" : [ "keep-alive" ],
+      "Content-Type" : [ "application/json;charset=UTF-8" ],
+      "Server" : [ "Apache-Coyote/1.1" ],
+      "mode" : [ "block" ],
+      "Cache-Control" : [ "max-age=0" ]
+    }
+  },
+  "redirectEnabled" : true,
+  "proxy" : null
+}

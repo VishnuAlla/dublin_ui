@@ -1,0 +1,27 @@
+{
+  "authType" : "NONE",
+  "contentType" : "text/xml",
+  "endpointAddress" : "https://wavemaker-apps.pramati.com/dev_api_dublin/services/createQuote/pendingApplicationDetails/A00003",
+  "method" : "GET",
+  "requestBody" : "",
+  "headers" : { },
+  "queryParams" : { },
+  "sampleHttpResponseDetails" : {
+    "responseBody" : "{\"Details\":[{\"clientDOB\":\"1990-11-01\",\"Gender\":\"Male\",\"ClientName\":\"John Doe\",\"EmailId\":\"John.Doe@Mailbox.com\",\"MaritalStatus\":\"Single\",\"NoOfChildren\":2,\"MobileNumber\":\"8066445522\",\"PhoneNumber\":\"8434561030\",\"Height\":172,\"Weight\":50,\"ChangeInWeight\":\"No\",\"Nationality\":\"American\",\"Qualification\":\"Graduate\",\"Company\":\"Imaginea\",\"OccupationalHazards\":\"NO\",\"AnnualIncome\":10000,\"Occupation\":\"Engg\",\"AddressType\":null,\"AddressLine1\":null,\"AddressLine2\":null,\"Zip\":null,\"Country\":null,\"SumAssured\":10000000,\"PolicyId\":\"P00003\",\"ApplicationId\":\"A00003\",\"StartDate\":1452858936000,\"PremiumType\":\"yearly\",\"TobaccoIntake\":\"No\",\"Term\":10,\"StateId\":null,\"PremiumToBePaid\":\"42000\",\"ClientId\":\"e566c2f4-c8de-11e6-9740-0242ac1108f8\",\"policyName\":\"iProtect Plus\"}],\"Nominees\":[]}",
+    "convertedResponse" : null,
+    "statusCode" : 200,
+    "headers" : {
+      "ETag" : [ "\"09babab0ed34a78feb3a2f74aa54bb021\"" ],
+      "Date" : [ "Tue, 14 Feb 2017 07:55:37 GMT" ],
+      "Content-Length" : [ "776" ],
+      "X-XSS-Protection" : [ "1" ],
+      "Connection" : [ "keep-alive" ],
+      "Content-Type" : [ "application/json;charset=UTF-8" ],
+      "Server" : [ "Apache-Coyote/1.1" ],
+      "mode" : [ "block" ],
+      "Cache-Control" : [ "max-age=0" ]
+    }
+  },
+  "redirectEnabled" : true,
+  "proxy" : null
+}

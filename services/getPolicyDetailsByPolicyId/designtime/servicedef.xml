@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="getPolicyDetailsByPolicyId" type="RestService" springFile="getPolicyDetailsByPolicyId.spring.xml">
+    <operation name="invoke">
+        <parameter name="policyId" typeRef="java.lang.String" isList="false"/>
+        <return typeRef="getPolicyDetailsByPolicyId.RootResponse" isList="false"/>
+    </operation>
+    <dataobjects>
+        <dataobject javaType="getPolicyDetailsByPolicyId.ClientDetails" name="ClientDetails" supportsQuickData="false">
+            <element name="Address" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="ClientName" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="ClientNumber" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="DateOfBirth" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="EmailId" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="MaritalStatus" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="MobileNumber" typeRef="java.lang.String" isList="false" allowNull="false"/>
+        </dataobject>
+        <dataobject javaType="getPolicyDetailsByPolicyId.PaymentDetailsEntryItem" name="PaymentDetailsEntryItem" supportsQuickData="false">
+            <element name="PaymentDate" typeRef="java.lang.Long" isList="false" allowNull="false"/>
+            <element name="PaymentMode" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PolicyPaymentId" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PremiumPaid" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="TransactionId" typeRef="java.lang.String" isList="false" allowNull="false"/>
+        </dataobject>
+        <dataobject javaType="getPolicyDetailsByPolicyId.PolicyDetail" name="PolicyDetail" supportsQuickData="false">
+            <element name="NextDueDate" typeRef="java.lang.Long" isList="false" allowNull="false"/>
+            <element name="PlanName" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PolicyId" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PolicyStatus" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PremiumPaid" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PremiumToBePaid" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="PremiumType" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="StartDate" typeRef="java.lang.Long" isList="false" allowNull="false"/>
+            <element name="SumAssured" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="term" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+        </dataobject>
+        <dataobject javaType="getPolicyDetailsByPolicyId.RootResponse" name="RootResponse" supportsQuickData="false">
+            <element name="ClientDetails" typeRef="getPolicyDetailsByPolicyId.ClientDetails" isList="false" allowNull="false"/>
+            <element name="NomineeDetails" typeRef="getPolicyDetailsByPolicyId.java.lang.Object" isList="true" allowNull="false"/>
+            <element name="PaymentDetails" typeRef="getPolicyDetailsByPolicyId.PaymentDetailsEntryItem" isList="true" allowNull="false"/>
+            <element name="PolicyDetail" typeRef="getPolicyDetailsByPolicyId.PolicyDetail" isList="false" allowNull="false"/>
+        </dataobject>
+        <dataobject javaType="getPolicyDetailsByPolicyId.java.lang.Object" name="java.lang.Object" supportsQuickData="false"/>
+    </dataobjects>
+</service>
