@@ -1,5 +1,5 @@
 var _WM_APP_PROPERTIES = {
-  "activeTheme" : "DublinTheme1.1",
+  "activeTheme" : "material",
   "defaultLanguage" : "en",
   "displayName" : "dublin-ui",
   "homePage" : "Main",
